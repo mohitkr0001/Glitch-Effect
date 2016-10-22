@@ -1,0 +1,109 @@
+
+body{
+ background-color: white;
+}
+  .glitch{
+  
+    position:relative;
+    width:800px;
+    margin:0 auto;
+    font-size: 100px;
+    color:#5a5959;
+    background-color: white;
+  }
+  .glitch:before{
+    content:attr(data-text);
+    position:absolute;
+    left:1px;
+    text-shadow: 1px 0 #4e97a0;
+    color:#5a5959;
+    clip:rect(0,9999px,0,0);
+    animation:glit2 1s infinite ;
+    
+}
+.glitch:after{
+    content:attr(data-text);
+    position:absolute;
+    left:-1px;
+    text-shadow: -1px 0 #e16e6e;
+    color:#5a5959;
+    clip:rect(0,9999px,0,0);
+    animation:glit 1s infinite ;
+}
+  @keyframes glit{
+    0%{
+      clip:rect(0,9999px,0,0);
+    }
+    10%{
+      clip:rect(10px,9999px,78px,0);
+    }
+    20%{
+      clip:rect(40px,9999px,60px,0);
+    }
+  30%{
+      clip:rect(70px,9999px,90px,0);
+    }
+    40%{
+      clip:rect(0px,9999px,56px,0);
+    }
+    50%{
+      clip:rect(25px,9999px,50px,0);
+    }
+    60%{
+      clip:rect(30px,9999px,100px,0);
+    }
+    70%{
+      clip:rect(0,9999px,50px,0);}
+       
+    40%{
+      clip:rect(14px,9999px,56px,0);
+    }
+    50%{
+      clip:rect(25px,9999px,89px,0);
+    }
+    60%{
+      clip:rect(36px,9999px,100px,0);
+    }
+    70%{
+      clip:rect(0,9999px,5px,0);
+    }
+
+  }
+  @keyframes glit2{
+    0%{
+      clip:rect(0,9999px,0,0);
+    }
+    12%{
+      clip:rect(10px,9999px,78px,0);
+    }
+    28%{
+      clip:rect(40px,9999px,60px,0);
+    }
+  76%{
+      clip:rect(70px,9999px,90px,0);
+    }
+    34%{
+      clip:rect(0px,9999px,56px,0);
+    }
+    89%{
+      clip:rect(25px,9999px,50px,0);
+    }
+    68%{
+      clip:rect(30px,9999px,100px,0);
+    }
+    50%{
+      clip:rect(0,9999px,50px,0);
+    }
+    40%{
+      clip:rect(0px,9999px,56px,0);
+    }
+    50%{
+      clip:rect(25px,9999px,50px,0);
+    }
+    60%{
+      clip:rect(30px,9999px,100px,0);
+    }
+    70%{
+      clip:rect(0,9999px,50px,0);}
+
+  }
